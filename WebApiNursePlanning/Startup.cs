@@ -35,19 +35,6 @@ namespace WebApiNursePlanning
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApiNursePlanning", Version = "v1" });
             });
 
-            //GG
-
-            //services.AddHttpClient("HttpClientWithSSLUntrusted").ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler
-            //{
-            //    ClientCertificateOptions = ClientCertificateOption.Manual,
-            //    ServerCertificateCustomValidationCallback =
-            //(httpRequestMessage, cert, cetChain, policyErrors) =>
-            //{
-            //    return true;
-            //}
-            //});
-
-            ///GG
 
             services.AddMvc()
                 .AddJsonOptions(options =>
